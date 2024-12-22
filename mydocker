@@ -1,0 +1,8 @@
+FROM openjdk:java
+WORKDIR /app
+COPY . /app
+RUN javac largestNum.java
+CMD [ java,"largestNum" ]
+
+
+
